@@ -15,20 +15,22 @@
             
             @font-face {
                 font-family: "EVA Matisse C";
-                src: url('/assets/fonts/EVA-Mattisse_Classic.ttf') format('truetype');
+                src: url('assets/fonts/EVA-Mattisse_Classic.ttf') format('truetype');
                 font-weight: normal;
                 font-style: normal;
             }
             
             @font-face {
                 font-family: "Eva Matisse S";
-                src: url('/assets/fonts/EVA-Mattisse_Standard.ttf') format('truetype');
+                src: url('assets/fonts/EVA-Mattisse_Standard.ttf') format('truetype');
                 font-weight: normal;
                 font-style: normal;
             }
 
             :root{
-                background-color: #17002c;
+		background: url('assets/backgrounds/bg.jpg');
+		backfround-size: cover;
+
             }
             body{
                 margin: 0;
@@ -37,7 +39,6 @@
             h1{
                 margin: 0;
                 padding: 1rem;
-                background: linear-gradient(to bottom, #0d0275, #17002c);
                 font-family: "EVA Matisse C", serif;
                 color: rgb(255, 255, 255);
                 font-size: 50px;
@@ -61,6 +62,7 @@
                 background: rgba(255, 255, 255, 0.33);
                 backdrop-filter: blur(10px);
                 -webkit-backdrop-filter: blur(10px);
+		border-radius: 15px;
             }
 
             .link {
@@ -107,23 +109,17 @@
         </p1>
         
         <p1> <br><br> 
-            contact me: <a class="link" href="shineyubhandari9@gmail.com">shineyubhandari9@gmail.com</a>
+            contact me: <u><a class="link" href="mailto:shineyubhandari9@gmail.com">shineyubhandari9@gmail.com</a></u>
         </p1>
 
         <br><br><br><br>
-        <div class="cert-container" id="gallery"> </div>
-
-        <script src="" async defer>
-            const logoImages = [
-                "ITF",
-                "ai",
-                "ps",
-                "id",
-                "vd",
-                "pmi"
-            ];
-
-        const gallery = document.getElementById("gallery");
-        </script>
+        <div class="cert-container" id="gallery">
+		<img class="img" src="assets/certificates/ai.png"></img>
+		<img class="img" src="assets/certificates/id.png"></img>
+		<img class="img" src="assets/certificates/ITF.png"></img>
+		<img class="img" src="assets/certificates/pmi.png"></img>
+		<img class="img" src="assets/certificates/ps.png"></img>
+		<img class="img" src="assets/certificates/vd.png"></img>
+</div>
     </body>
 </html>
